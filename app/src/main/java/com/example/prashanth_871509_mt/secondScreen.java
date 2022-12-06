@@ -13,9 +13,12 @@ public class secondScreen extends AppCompatActivity {
         setContentView(R.layout.activity_second_screen);
         totalPayment = findViewById(R.id.textView9);
         numofdays =  findViewById(R.id.textView10);
+        carinfo =  findViewById(R.id.textView11);
         String s1 = getIntent().getStringExtra("Total Payment");
         String s2 = getIntent().getStringExtra("Number of days");
+        String s3 =  getIntent().getStringExtra("Car Selection");
         numofdays.setText("Number of days: "+s2);
+        carinfo.setText("Car Model :"+s3);
         totalPayment.setText(s1);
     }
 }

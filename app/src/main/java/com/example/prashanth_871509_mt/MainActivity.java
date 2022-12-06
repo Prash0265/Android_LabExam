@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
                 numOfDays.setText("Days: "+progress);
                 duration = progress;
                 Amount.setText("Amount: "+(Price*duration) +"$");
-                totalPayment.setText("Amount: "+decfor.format((Price*duration)*1.13) +"$");
+                totalPayment.setText("Total Payment: "+decfor.format((Price*duration)*1.13) +"$");
 
             }
 
